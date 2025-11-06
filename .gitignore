@@ -1,36 +1,74 @@
-# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
-
-# dependencies
-/node_modules
-/.pnp
-.pnp.js
-
-# testing
-/coverage
-
-# next.js
-/.next/
-/out/
-
-# production
-/build
-
-# misc
-.DS_Store
-*.pem
-
-# debug
+# -----------------------------
+# Node / npm / pnpm / yarn
+# -----------------------------
+node_modules/
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+pnpm-debug.log*
+package-lock.json
+.pnpm-debug.log
 
-# local env files
-.env*.local
+# -----------------------------
+# Next.js build output
+# -----------------------------
+.next/
+out/
+build/
+dist/
+
+# -----------------------------
+# Environment variables
+# -----------------------------
 .env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
 
-# vercel
-.vercel
+# -----------------------------
+# OS / Editor specific
+# -----------------------------
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.swp
+*.swo
 
-# typescript
-*.tsbuildinfo
-next-env.d.ts
+# -----------------------------
+# Logs and temporary files
+# -----------------------------
+*.log
+logs/
+*.tmp
+*.temp
+*.pid
+*.seed
+*.pid.lock
+
+# -----------------------------
+# Coverage and test output
+# -----------------------------
+coverage/
+cypress/videos/
+cypress/screenshots/
+test-output/
+
+# -----------------------------
+# Docker / CI artifacts
+# -----------------------------
+docker-compose.override.yml
+.docker/
+*.tar
+*.img
+
+# -----------------------------
+# Local data / cache
+# -----------------------------
+.cache/
+.turbo/
+.vercel/
+.eslintcache
+.stylelintcache
+.next/cache/
